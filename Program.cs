@@ -1,41 +1,61 @@
 ﻿// See https://aka.ms/new-console-template for more information
 //Console.WriteLine("Hello, World!");
 
-class Pessoa
+class Carro
 {
-    //atributos
-    public string Nome = "";
-    public int idade = 0;
+    private string marca = "";
 
-    //métodos
-    public void apresentar()
+    private string modelo = "";
+
+    private int anoDeFabricacao = 0;
+
+    public void Ligar()
     {
-        Console.WriteLine($"Olá, meu nome é {Nome} e tenho {idade} anos.");
+        Console.WriteLine($"{marca} {modelo} fabricado em  {anoDeFabricacao} está ligando.");
+
     }
 
+    public void Setmarca(string marca)
+    {
+        if (marca != null) { }
+        {
+            this.marca = marca;
+        }
+
+    }
+    public void Setmodelo(string modelo)
+    {
+        this.modelo = modelo;
+    }
+    public void SetanoDeFabricacao(int anoDeFabricacao)
+    {
+        if (anoDeFabricacao >= 2010)
+        {
+            this.anoDeFabricacao = anoDeFabricacao;
+
+        }
+
+    }
+
+
 }
+
 
 class Program
 {
     static void Main(string[] args)
     {
-        //instanciando um objeto da classe Pessoa
-        Pessoa pessoa1 = new Pessoa();
-        pessoa1.Nome = "João";
-        pessoa1.idade = 30;
+        Carro carro = new Carro();
+        carro.Setmarca("Toyota");
+        carro.Setmodelo("Corolla");
+        carro.SetanoDeFabricacao(2022);
+        carro.Ligar();
 
-        //chamando o método apresentar
-        pessoa1.apresentar();
+        Console.WriteLine("Pressione qualquer tecla para sair...");
+        Console.ReadKey();
 
-        //instanciando outro objeto da classe Pessoa
-        Pessoa pessoa2 = new Pessoa();
-        pessoa2.Nome = "Maria";
-        pessoa2.idade = 25;
 
-        //chamando o método apresentar
-        pessoa2.apresentar();
     }
-}   
-
+}
 
 

@@ -12,3 +12,4 @@ C:\Users\isabe\OneDrive\Documentos\ProjetoDS\MeuProjeto\obj\Debug\net9.0\refint\
 C:\Users\isabe\OneDrive\Documentos\ProjetoDS\MeuProjeto\obj\Debug\net9.0\MeuProjeto.pdb
 C:\Users\isabe\OneDrive\Documentos\ProjetoDS\MeuProjeto\obj\Debug\net9.0\MeuProjeto.genruntimeconfig.cache
 C:\Users\isabe\OneDrive\Documentos\ProjetoDS\MeuProjeto\obj\Debug\net9.0\ref\MeuProjeto.dll
+C:\Users\isabe\OneDrive\Documentos\ProjetoDS\MeuProjeto\obj\Debug\net9.0\MeuProjeto.sourcelink.json
